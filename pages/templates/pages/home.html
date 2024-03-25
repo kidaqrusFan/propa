@@ -115,11 +115,11 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link " href="about.html">About</a>
+          <a class="nav-link " href="{% url 'about' %}">About</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link " href="property-grid.html">Property</a>
+          <a class="nav-link " href="{% url 'property' %}">Property</a>
         </li>
 
         
@@ -145,7 +145,7 @@
 
   <div class="swiper-wrapper">
 
-    <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-1.jpg)">
+    <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(static/img/slide-1.jpg)">
       <div class="overlay overlay-a"></div>
       <div class="intro-content display-table">
         <div class="table-cell">
@@ -170,7 +170,7 @@
         </div>
       </div>
     </div>
-    <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-2.jpg)">
+    <div class="swiper-slide carousel-item-a intro-item bg-image" style = "background-image: url(static/img/slide-2.jpg)"> 
       <div class="overlay overlay-a"></div>
       <div class="intro-content display-table">
         <div class="table-cell">
@@ -195,7 +195,7 @@
         </div>
       </div>
     </div>
-    <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-3.jpg)">
+    <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(static/img/slide-3.jpg)">
       <div class="overlay overlay-a"></div>
       <div class="intro-content display-table">
         <div class="table-cell">
@@ -251,9 +251,9 @@
             </div>
             <div class="card-body-c">
               <p class="content-c">
-                Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                convallis a pellentesque
-                nec, egestas non nisi.
+                with a strong emphasis on lifestyle and the community atmosphere of like-minded residents. Operating in property management for the past 15 years,
+                 we have developed three over 55/60 Lifestyle Villages that are based on ownership by freehold unit title, where the purchaser retains full ownership of their home, yet allows 
+                them to live in a village environment providing larger floor size villas, an onsite caretaker and clubhouse facility.
               </p>
             </div>
             <div class="card-footer-c">
@@ -275,9 +275,10 @@
             </div>
             <div class="card-body-c">
               <p class="content-c">
-                Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit. Mauris blandit
-                aliquet elit, eget tincidunt
-                nibh pulvinar a.
+                Individuals and businesses use mortgages to buy real estate without paying the entire purchase price up front.
+                 The borrower repays the loan plus interest over a specified number of years until they own the property free 
+                 and clear. Most traditional mortgages are fully-amortizing. This means that the regular payment amount will stay the same, but different proportions of principal vs.
+                 interest will be paid over the life of the loan with each payment. Typical mortgage terms are for 15 or 30 years.
               </p>
             </div>
             <div class="card-footer-c">
@@ -299,9 +300,10 @@
             </div>
             <div class="card-body-c">
               <p class="content-c">
-                Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                convallis a pellentesque
-                nec, egestas non nisi.
+                The average price of houses for sale is ₦110,514,067 The most expensive house costs ₦1,000,000,000. while the cheapest 
+                costs ₦500,000. We have a total of 38,614 Property for sale in Nigeria updated on 24 Mar 2024. Among these properties are houses,
+                 lands, shops, apartments, flats and commercial spaces . Every Real Estate in Nigeria posted on this site is verified by real estate agents . We also have cheap
+                 houses for rent and cheap houses for sale . Refine your property search by price, number of beds and type of property.
               </p>
             </div>
             <div class="card-footer-c">
@@ -339,13 +341,13 @@
           <div class="carousel-item-b swiper-slide">
             <div class="card-box-a card-shadow">
               <div class="img-box-a">
-                <img src="img/property-5.jpg" alt="" class="img-a img-fluid">
+                <img src="{% static 'img/property-5.jpg' %}" alt="" class="img-a img-fluid">
               </div>
               <div class="card-overlay">
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="property-single.html">206 Mount
+                      <a href="{% url 'detail' %}">206 Mount
                         <br /> Olive Road Two</a>
                     </h2>
                   </div>
@@ -353,7 +355,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">rent | $ 12.000</span>
                     </div>
-                    <a href="#" class="link-a">Click here to view
+                    <a href="{% url 'detail' %}" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
@@ -393,7 +395,7 @@
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="property-single.html">157 West
+                      <a href="{% url 'detail' %}">157 West
                         <br /> Central Park</a>
                     </h2>
                   </div>
@@ -401,7 +403,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">rent | $ 12.000</span>
                     </div>
-                    <a href="property-single.html" class="link-a">Click here to view
+                    <a href="{% url 'detail' %}" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
@@ -441,7 +443,7 @@
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="property-single.html">245 Azabu
+                      <a href="{% url 'detail' %}">245 Azabu
                         <br /> Nishi Park let</a>
                     </h2>
                   </div>
@@ -449,7 +451,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">rent | $ 12.000</span>
                     </div>
-                    <a href="property-single.html" class="link-a">Click here to view
+                    <a href="{% url 'detail' %}" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
@@ -489,7 +491,7 @@
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="property-single.html">204 Montal
+                      <a href="{% url 'detail' %}">204 Montal
                         <br /> South Bela Two</a>
                     </h2>
                   </div>
@@ -497,7 +499,7 @@
                     <div class="price-box d-flex">
                       <span class="price-a">rent | $ 12.000</span>
                     </div>
-                    <a href="property-single.html" class="link-a">Click here to view
+                    <a href="{% url 'detail' %}" class="link-a">Click here to view
                       <span class="bi bi-chevron-right"></span>
                     </a>
                   </div>
@@ -878,9 +880,7 @@
                   </div>
                   <div class="testimonials-content">
                     <p class="testimonial-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate ea nam praesentium
-                      debitis hic ber quibusdam
-                      voluptatibus officia expedita corpori.
+                      this is ab
                     </p>
                   </div>
                   <div class="testimonial-author-box">
@@ -906,9 +906,7 @@
                   </div>
                   <div class="testimonials-content">
                     <p class="testimonial-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cupiditate ea nam praesentium
-                      debitis hic ber quibusdam
-                      voluptatibus officia expedita corpori.
+                     <h1> hey baro</h1>
                     </p>
                   </div>
                   <div class="testimonial-author-box">
@@ -929,7 +927,7 @@
 
 </main><!-- End #main -->
 
-<!-- ======= Footer ======= -->
+<!-- ======= Footer        <p>igno    ======= notinhm-->
 <section class="section-footer">
   <div class="container">
     <div class="row">
