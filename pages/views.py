@@ -35,3 +35,6 @@ def property(request):
     return render(request, "pages/property.html", {})
 
 
+def contact(request):
+    return render(request, "pages/contact.html", {})
+
