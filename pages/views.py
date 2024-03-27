@@ -28,6 +28,9 @@ def detail5(request):
 def detail6(request):
     return render(request, "pages/detail6.html", {})
 
+def detail7(request):
+    return render(request, "pages/detail7.html", {})
+
 def about(request):
     return render(request, "pages/about.html", {})
 
